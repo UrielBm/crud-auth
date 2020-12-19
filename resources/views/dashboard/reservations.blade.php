@@ -24,6 +24,7 @@
                 <td>{{ $reservation->room['type'] }}</td>
                 <td>{{ $reservation->num_of_guests }}</td>
                 <td>${{ $reservation->room['price'] }}</td>
+                <td>{{ $reservation->user_id }}</td>
             <td><a href="/dashboard/reservations/{{ $reservation->id }}/edit" class="btn btn-sm btn-success">Edit</a></td>
             </tr>
             @endforeach            
